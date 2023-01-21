@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.2.0" />
+		<PackageReference Include="MassTransit" Version="7.1.6" />
+		<PackageReference Include="MassTransit.AspNetCore" Version="7.1.6" />
+		<PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.1.6" />
+		<PackageReference Include="MassTransit.RabbitMQ" Version="7.1.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\WebModelDto\WebModelDto.csproj" />
+	  <ProjectReference Include="..\WebWorkersData\WebWorkersData.csproj" />
+	  <ProjectReference Include="..\WebWorkersMapper\WebWorkersMapper.csproj" />
+	</ItemGroup>
+
+</Project>
